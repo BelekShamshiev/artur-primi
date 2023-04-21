@@ -1,0 +1,300 @@
+body {
+  background-repeat: no-repeat;
+}
+.container {
+  background: url(../../assets/home.png);
+  height: 620px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+hr {
+  width: 100px;
+  border: 1px solid #ffffff;
+}
+
+.low_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.low {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.low > img {
+  width: 50px;
+  height: 50px;
+}
+.low > p {
+  font-size: 20px;
+}
+.best {
+  margin: 0 auto;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 90%;
+}
+
+.title_text {
+  color: white;
+  font-size: 40px;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+
+}
+.title_date{
+  color: white;
+  font-size: 20px;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+
+}
+.title_special {
+  color: #ffffff;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+  font-size: 45px;
+  white-space: nowrap;
+}
+.title_beans{
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+.bob {
+  width: 480px;
+  height: 370px;
+  transition: transform 0.3s ease-in-out;
+}
+.bob:hover{
+  transform: scale(1.1);
+}
+.hero_swiper{
+  color: #fff;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+
+}
+.drink {
+  width: 474px;
+  height: 272px;
+  transition: transform 0.3s ease-in-out;
+}
+.drink:hover{
+  transform: scale(1.1);
+}
+.swiper {
+  margin: 0 auto;
+  width:0%;
+  height: 150px;
+}
+.swiper>p{
+  color: #fff;
+}
+.coffe{
+  width: 50px;
+  height: 50px;
+}
+.title{
+  opacity: 0; 
+   transition: opacity 0.3s ease-in-out;
+}
+@keyframes show {
+  from {
+     opacity: 0;
+  }
+  to {
+     opacity: 1;
+  }
+}
+
+.low{
+  animation: show 6.0s ease-in-out forwards;
+}
+.best{
+  animation: show 4.0s ease-in-out forwards;
+
+}
+.title{
+  animation: show 4.5s ease-in-out forwards;
+
+}
+
+/* CSS code for screens with a maximum width of 1024px */
+@media (max-width: 1024px) {
+  .container {
+    background: url(../../assets/home.png);
+    height: 100%;
+    max-height: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .low_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .low {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .low > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .low > p {
+    font-size: 18px;
+  }
+
+  .best {
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .h1_best {
+    color: white;
+    font-size: 25px;
+  }
+
+  .p_best {
+    color: white;
+    font-size: 13px;
+  }
+
+  .h1_special {
+    color: #ffffff;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+  }
+
+  .p_special {
+    color: #ffe2a4;
+    font-size: 20px;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  p {
+    color: white;
+    font-size: 13px;
+  }
+
+  .bob {
+    width: 300px;
+    height: 280px;
+  }
+
+  .drink >img{
+    width: 374px;
+    height: 212px;
+  }
+
+  .swiper {
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+  }
+
+  .coffe {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width:1057px) {
+  .container{
+    width: 100%;
+  }
+  .Hero_drink>img{
+    width: 300px;
+    height: 200px;
+
+  }
+}
+@media screen and (max-width:859px) {
+  .container{
+    width: 100%;
+  }
+  .drink>img{
+    width: 250px;
+    height: 180px;
+  }
+  .bob>img{
+    width: 200px;
+    height: 200px;
+  }
+  .title_text{
+    font-size: 25px;
+  }
+  .title_special{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-height: unset;
+    height: auto;
+  }
+  
+  .low_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .low {
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+  
+  .low > img {
+    margin-right: 10px;
+  }
+  
+  .best {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .bob {
+    width: 250px;
+    height: 240px;
+  }
+  
+  .drink {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  
+  .swiper {
+    height: 200px;
+  }
+  
+  .h1_best, .p_best {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .h1_special, .p_special {
+    text-align: center;
+  }
+  
+  .coffe {
+    width: 30px;
+    height: 30px;
+  }
+}
